@@ -6,7 +6,7 @@ Spells = {
       tooltip: "Speed up the flow of time for 30 seconds",
       icon: "",
       cooldown: 1,
-      duration: 1200,
+      duration: 30000,
       energyCost: 0,
       start() {
         GameModel.gameSpeed = 2;
@@ -20,8 +20,8 @@ Spells = {
       name: "Energy Charge",
       tooltip: "5x Energy rate for 20 seconds, cost 50 energy",
       icon: "",
-      cooldown: 180,
-      duration: 200,
+      cooldown: 1,
+      duration: 30000,
       energyCost: 5,
       start() {
         GameModel.energySpellMultiplier = 5;
@@ -68,8 +68,8 @@ Spells = {
       tooltip:
         "For 5 seconds any zombies spawned will be giants with 10x health and attack damage, cost 100 energy",
       icon: "",
-      cooldown: 3,
-      duration: 500,
+      cooldown: 1,
+      duration: 30000,
       energyCost: 100,
       start() {
         Zombies.super = true;
